@@ -7,7 +7,7 @@
        <h1>質問投稿</h1>
     
         <!--<form action="/question/" method="POST">-->
-        <form action="{{ action('QuestionController@create') }}" method="post" enctype="multipart/form-data">
+        <form action="{{ route('question.create') }}" method="post" enctype="multipart/form-data">
             
             @if (count($errors) > 0)
                 <ul>

@@ -2,8 +2,8 @@
 
 @section('content')
     <div class="question-btn">
-        <!--<a href="{{ action('QuestionController@add') }}">質問する</a>　ほんとはこれ-->
-        <a href="{{ url('/question/post') }}">質問する</a>
+        <a href="{{ route('question.post') }}">質問する</a>
+        <!--<a href="{{ url('/question/post') }}">質問する</a>-->
     </div>
     <br>
 　　<br style="Line-Height:6pt">

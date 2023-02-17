@@ -22,7 +22,7 @@ class QuestionController extends Controller
      *
      * @return \Illuminate\Contracts\Support\Renderable
      */
-    public function add()
+    public function index()
     {
         return view('question.index');
     }
