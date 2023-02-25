@@ -9,5 +9,9 @@
 　　<br style="Line-Height:6pt">
     <div class="links">
         <h3 class="border-bottom border-gray pb-2 mb-0">質問投稿一覧</h3>
+        <p>{{ $hogee }}</p>
+        @foreach($questions as $q)
+          <a>{{ $q->title }}</a>
+        @endforeach
     </div>
 @endsection

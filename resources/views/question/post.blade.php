@@ -5,7 +5,7 @@
     <body>
     
        <h1>質問投稿</h1>
-    
+
         <!--<form action="/question/" method="POST">-->
         <form action="{{ route('question.create') }}" method="post" enctype="multipart/form-data">
             
@@ -17,21 +17,15 @@
                 </ul>
             @endif
             <div class="form-group row">
-                <label class="col-md-2">名前</label>
-                <div class="col-md-8">
-                    <input type="text" class="form-control" name="name" value="{{ old('title') }}">
-                </div>
-            </div>
-            <div class="form-group row">
                 <label class="col-md-2">タイトル</label>
                 <div class="col-md-8">
-                    <textarea class="form-control" name="title" rows="1">{{ old('body') }}</textarea>
+                    <textarea class="form-control" name="title" rows="1">{{ old('title') }}</textarea>
                 </div>
             </div>
             <div class="form-group row">
                 <label class="col-md-2">質問内容</label>
                 <div class="col-md-8">
-                    <textarea class="form-control" name="questioncontents" rows="4">{{ old('body') }}</textarea>
+                    <textarea class="form-control" name="content" rows="4">{{ old('content') }}</textarea>
                 </div>
             </div>
             <div class="form-group row">

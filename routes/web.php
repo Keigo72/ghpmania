@@ -38,7 +38,7 @@ Route::controller(HomeController::class)->prefix('mypage')->name('mypage.')->mid
 Route::controller(QuestionController::class)->prefix('question')->name('question.')->middleware('auth')->group(function () {
     Route::get('/', 'index')->name('index');
     Route::get('/post', 'post')->name('post');
-    Route::post('/post', 'index')->name('create');
+    Route::post('/post', 'create')->name('create');
 });
 // Route::get('/mypage', 'HomeController@add')->name('mypage');
 // Route::get('/question', 'QuestionController@add')->name('question');

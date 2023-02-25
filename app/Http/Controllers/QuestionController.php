@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 
-use App\Question;
+use App\Models\Question;
 
 use Carbon\Carbon;
 use Storage;
@@ -24,7 +24,7 @@ class QuestionController extends Controller
      */
     public function index()
     {
-        return view('question.index');
+        return view('question.index', ["questions" => Question::all(), "hogee" => "学習用のテスト文字列です"]);
     }
     public function post()
     {
